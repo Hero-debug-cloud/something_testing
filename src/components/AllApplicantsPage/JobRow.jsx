@@ -16,12 +16,14 @@ const JobRow = () => {
         }
         const fetchJobs =  async () => {
             const response = await axios.get(`${host}/api/job-recruiter/jobs`, {headers})
-            console.log(response)
-            console.log(TOKEN)
             setJobs(response.data.items?.jobs);
         }
         fetchJobs();
-    },[URL, TOKEN])
+    },[TOKEN])
+
+    const handleClick = (jobId) => {
+        localStorage.setItem('clickedJobId', jobId);
+    }
 
     return(
         <div className={styles.table_container}>
@@ -40,7 +42,7 @@ const JobRow = () => {
             </thead>
             <tbody className={styles.table_body}>  
                 {jobs?.map((job, index) => (
-                    <Link className={styles.link} to="/applicants" key={index}>
+                    <Link className={styles.link} to="/applicants" onClick={()=> handleClick(job._id)} key={index}>
                     <tr style={index%2==0? {}: {backgroundColor:'#F8F8F8'}} className={styles.row_hover}>
                         <td>{job.titleOfJob}</td>
                         <td className={job.status=='Live'? styles.live_status : styles.closed_status}>{job.status}</td>

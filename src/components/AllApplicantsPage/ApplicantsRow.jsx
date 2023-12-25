@@ -2,9 +2,10 @@ import styles from "./ApplicantsRow.module.css"
 import { useEffect, useState } from "react"
 import { RxCaretSort } from "react-icons/rx";
 import { MdMoreHoriz } from "react-icons/md";
+import { FiSearch } from "react-icons/fi";
+import Filter from "../../components/AllApplicantsPage/Filter"
 import { Link, useNavigate } from "react-router-dom";
 import axios from "axios";
-
 import host from "../../../host";
 import { toast } from "react-toastify";
 
@@ -43,6 +44,18 @@ const ApplicantsRow = () => {
 
     return (
         <div className={styles.table_container}>
+            <div className={styles.applicants_content}>
+                <h4>Total Applicants : {applicants.length}</h4>
+                <div className={styles.right_app_cont}>
+                    <div className={styles.search_container}>
+                        <div className={styles.search_icon}>
+                            <FiSearch color="#ccc"/>
+                        </div>
+                        <input type="text" className={styles.search_box} placeholder="Search Applicants"/>
+                    </div>
+                    <Filter/>
+                </div>
+            </div>
             <table className={styles.table}>
                 <thead className={styles.table_header}>
                     <tr>
