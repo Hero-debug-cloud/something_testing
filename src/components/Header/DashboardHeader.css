@@ -1,5 +1,5 @@
 .PostJobHeader-1  {
-    padding: 20px 20px 20px 20px;
+    padding: 16px 20px;
     display: flex;
     justify-content: space-between;
     border-bottom: 1.5px solid #D6DDEB;
@@ -7,27 +7,28 @@
 .PostJobHeader-1-left{
     display: flex;
 }
-
+.PostJobHeader-logo{
+    margin: 0px 16px;
+}
 .PostJobHeader-1-companyName{
-    margin: 0px 15px;
-    padding: 0px 2px 0px 1px;
     display: flex;
     flex-direction: column;
+    gap: 4px;
 }
-
+.PostJobHeader-1-companyName-label{
+    font-size: 14px;
+    color: #515B6F;
+    line-height: normal;
+}
 .postJobHeader-1-companyName-dropDown{
-    color: blue;
     font-weight: bold;
-}
-
-.postJobHeader-1-companyName-dropDown{
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    gap: 8px;
 }
-.postJobHeader-1-companyName-dropDown-pointer{
-    padding: 3px 0px 0px 3px;
+.postJobHeader-1-companyName-dropDown h4{
+    font-size: 18px;
 }
 .PostJobHeader-1-right{
     display: flex;
@@ -35,18 +36,15 @@
     align-items: center; 
 }
 .PostJobHeader-1-button{
-    margin-left: 40px;
+    margin: 0 20px 0 40px;
     color: white;
     background-color: #4640DE;
-    /* align-items: center; */
     display: flex;
     align-items: center;
     justify-content: center;
-    width:120px;
-    height:50px;
-    padding: 0px 20px 0px 10px;
+    width: 12vw;
+    padding: 8px 6px;
 }
-
 .PostJobHeader-1-right-label{
     font-size: medium;
     margin-left: 10px;

@@ -16,13 +16,13 @@ const Sidebar = () => {
     <div className={styles.sidebar}>
       <div className={styles.logo}>
         <img src={logo} alt="Company Logo" />
-        <h2>Active Life</h2>
+        <h2>Activet Life</h2>
       </div>
       <nav>
         <ul>
           <li>
             <Link>
-            <button > 
+            <button className={styles.dashboard_button}> 
               <FaHome/>
               Dashboard
             </button>
@@ -41,19 +41,15 @@ const Sidebar = () => {
             <button className={loc=='/all'||loc=='/applicants'||loc=='/profile'?styles.active:styles.inactive}><MdGroups2/>All Applicants</button>
             </Link>
           </li>
+        </ul>
           <hr />
           <li>
+            <h4 className={styles.settings}>SETTINGS</h4>
           <Link className={styles.link_field} to='/'>
-            <h4>SETTINGS</h4>
             <button><IoMdHelpCircleOutline/>Help Center</button>
             </Link>
           </li>
-        </ul>
       </nav>
-      <div className={styles.user_login}>
-        {/* User login information or login button */}
-        <img src="path/to/your/logo.png" alt="User Name" />
-      </div>
     </div>
   );
 };

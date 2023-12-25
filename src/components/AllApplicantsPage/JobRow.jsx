@@ -16,6 +16,8 @@ const JobRow = () => {
         }
         const fetchJobs =  async () => {
             const response = await axios.get(`${host}/api/job-recruiter/jobs`, {headers})
+            console.log(response)
+            console.log(TOKEN)
             setJobs(response.data.items?.jobs);
         }
         fetchJobs();

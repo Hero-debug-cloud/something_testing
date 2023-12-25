@@ -13,14 +13,20 @@
 .top_container{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 4px;
 }
 .heading_container{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 2px;
+}
+.heading_container h2{
+    font-size: 20px;
+    font-weight: bold;
 }
 .heading_container p{
     color: #7C8493;
+    font-size: 14px;
 }
 .date_container{
     display: flex;
@@ -32,19 +38,19 @@
     padding: 0 12px;
 }
 .body_container{
-    margin-top: 2em;
+    margin-top: 1em;
 }
 .head_table{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 18px;
+    padding: 16px 20px;
     padding-right: 24px;
     border: 1.5px solid #D6DDEB;
 }
 .head_table p{
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 18px;
 }
 .no-scrollbar::-webkit-scrollbar {
     display: none;
