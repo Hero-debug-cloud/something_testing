@@ -1,0 +1,145 @@
+/* styles.css */
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap');
+
+/* Shared styles for font family */
+.body-large {
+  font-family: 'Epilogue', sans-serif;
+  font-size: 18px;
+  line-height: 29px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+/* Font weights */
+.body-large-small {
+  font-weight: 300; /* Regular */
+}
+.body-large-regular {
+  font-weight: 400; /* Regular */
+}
+
+.body-large-medium {
+  font-weight: 500; /* Medium */
+}
+
+.body-large-semi-bold {
+  font-weight: 600; /* Semi-bold */
+}
+
+.body-large-bold {
+  font-weight: 700; /* Bold */
+}
+.Step3-container{
+    height:70vh;
+    /* background-color: aqua;; */
+    overflow-y: scroll;
+}
+
+.Step3-box{
+    padding:20px;
+    height: 100%;;
+    /* background-color: blue; */
+}
+
+
+
+.Step3-box-Company-logo-left ,.Step3-box-Company-details-left,.Step3-box-about-company-left{
+    width: 30%;
+    padding-bottom: 20px;
+    /* background-color: #4640DE; */
+    margin-right: 30px;
+}
+
+.Step3-box-Company-logo,.Step3-box-Company-details,.Step3-box-about-company{
+    height: 25vh;
+    margin-top: 20px;
+    /* background-color: aqua; */
+    padding-top: 20px;
+}
+
+.Step3-box-Company-details,.Step3-box-about-company,.Step3-box-Company-logo{
+    display: flex;
+    
+    height: 25vh;
+    margin-bottom: 30px;
+
+    border-top: 2px solid #D6DDEB;
+}
+.step3-box-submit{
+    border-top: 2px solid #D6DDEB;;
+    
+}
+
+
+.step3-box-submit-button{
+   
+   margin-top: 20px;
+    /* background-color:#4640DE ; */
+    padding:10px 20px 10px 20px;
+    font-size: large;
+    float:right;
+    color:white;
+    border:none;
+}
+
+.Step3-box-about-company{
+    height:20px  ;
+    /* background-color: #4640DE; */
+    height: 42vh;
+}
+
+.Step3-box-about-company-right{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 30px;
+   
+}
+
+.Step3-box-about-company-right textarea{
+    padding:0px 0px 2px 2px;
+}
+
+.Step3-box-Company-details-right{
+    width:50%;
+    margin-left:30px;
+    /* background-color: aqua;; */
+}
+.Step3-box-Company-details-right-container{
+    height: 100%;;
+    /* background-color: #4640DE; */
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+    margin-top: 10px;
+}
+.Step3-box-Company-details-right-container input{
+    padding:7px 0px 0px 4px;
+    /* margin-top: 10px ; */
+    margin-bottom: 15px;
+    margin-top:4px;
+}
+.Step3-box-Company-details{
+    height:60vh;
+    /* background-color: #4640DE; */
+}
+
+.Step3-box-Company-details-right-container-emp-ind{
+    width:50%;
+    display: flex; flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+    /* background-color: #4640DE; */
+}
+
+.Step3-box-Company-details-right-container-date{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.Step3-box-basic-information h3 ,.Step3-box-Company-details-left h3,.Step3-box-Company-logo-left h3 ,.Step3-box-about-company-left h3{
+    
+    margin-bottom: 7px;
+}

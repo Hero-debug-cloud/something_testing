@@ -1,0 +1,27 @@
+.top_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+}
+.left_top_at{
+    display: flex;
+}
+.back_arrow{
+    padding: 8px 20px;
+}
+.job_role_cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.job_role_cont div{
+    display: flex;;
+}
+.action_dropdown{
+    padding: 12px;
+    font-weight: bold;
+    border: 1.5px solid #CCCCF5;
+    color: #4640DE;
+    font-size: 14px;
+}

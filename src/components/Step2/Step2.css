@@ -1,0 +1,85 @@
+.Step2-container{
+    height:70vh;
+    /* background-color: aqua;; */
+    overflow-y: scroll;
+}
+
+.Step2-box{
+    padding:20px;
+    height: 100%;;
+    /* background-color: blue; */
+}
+.Step2-box-details{
+    height: 10vh;;
+}
+.Step2-box-details label{
+    color: #7C8493;
+}
+
+.Step2-box-descriptions,.Step2-box-Responsibilities,.Step2-box-who-you-are,.Step2-box-Nice-to-have{
+    display: flex;
+    
+    /* background-color: #4640DE; */
+    padding-top: 20px;
+    height: 25vh;
+    margin-bottom: 30px;
+    border-top: 2px solid #D6DDEB;
+    
+
+}
+
+.Step2-box-descriptions-right input,.Step2-box-Responsibilities-right input {
+    padding:4px 400px 150px 4px;
+    margin-bottom:5px;
+    outline: none;
+    margin-top: 10px;
+
+}
+.Step2-box-who-you-are-right input,.Step2-box-Nice-to-have-right input {
+    padding:4px 40px 140px 4px;
+    outline: none;
+    margin-bottom:5px;
+    margin-top: 10px;
+
+}
+
+
+
+.Step2-box-descriptions-right,.Step2-box-Responsibilities-right,.Step2-box-who-you-are-right,.Step2-box-Nice-to-have-right{
+display: flex;
+flex-direction: column;
+margin-left: 10vw;
+
+}
+
+.Step2-box-descriptions label,.Step2-box-Responsibilities label,.Step2-box-who-you-are label,.Step2-box-Nice-to-have label{
+   color: #7C8493;
+   
+}
+
+.step2-box-submit{
+    border-top: 2px solid #D6DDEB;;
+    
+}
+
+
+.step2-box-submit-button{
+   
+   margin-top: 20px;
+    background-color:#4640DE ;
+    padding:10px 20px 10px 20px;
+    font-size: large;
+    float:right;
+    color:white;
+    border:none;
+}
+
+.Step2-box-Nice-to-have-left,.Step2-box-who-you-are-left,.Step2-box-Responsibilities-left,.Step2-box-descriptions-left{
+    width:30%;
+    padding-bottom: 200px;
+    
+}
+.Step2-box-details h3 ,.Step2-box-Nice-to-have-left h3,.Step2-box-who-you-are-left h3,.Step2-box-Responsibilities-left h3,.Step2-box-descriptions-left h3{
+    margin-bottom: 7px;
+    
+}

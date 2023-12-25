@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'Epilogue', sans-serif;
+    
+    line-height: 29px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
+
+.btn{
+    cursor: pointer;
+}
+
+
+
+.PostJobHeader{
+    height: 30%;
+    width: 81vw;
+    /* position: fixed; */
+    /* border-bottom: 2px solid pink; */
+}
+
+.PostJobHeader-2-bottom{
+    /* background-color: aquamarine; */
+    /* border-top: 2px solid #D6DDEB; */
+    
+    display: flex;
+    justify-content: space-around;
+}
+
+.PostJobHeader-2-stepbox{
+    display: flex;
+    /* background-color: #4640DE; */
+    /* border-top: 2px solid black; */
+    margin-bottom: 20px;;
+    height: 70%;
+    border: 2px solid #D6DDEB;
+    border-left: none;
+    width:90%;
+}
+
+.PostJobHeader-2-upper{
+    padding: 20px 20px 20px 20px;
+    display: flex;
+
+   
+    
+}
+
+
+  
+
+.imageHolder{
+    background-color: #E9EBFD;
+    width:70px;
+    height: 70px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageHolder-active{
+    background-color: #4640DE;
+}
+
+
+.PostJobHeader-2-upper-label{
+    margin: 0px 20px  ;
+    font-size: x-large;
+    height:2vh;
+  
+    font-weight: bold;
+    font-family: 'Epilogue', sans-serif;
+}
+.PostJobHeader-2-stepbox-1{
+    width:30%;
+    height: 70%;
+    display: flex;
+    padding:20px;
+    border-left: 2px solid #D6DDEB;
+    
+  align-items: center;
+    align-self: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    
+}
+
+.PostJobHeader-2-stepbox-1-right{
+    padding:0px 20px 0px 20px;
+    display: flex;
+    flex-direction: column;
+    height: 10%;
+    /* background-color: #4640DE; */
+}
+.PostJobHeader-2-stepbox-1-right-upper-label{
+
+    font-size: large;
+}
+.PostJobHeader-2-stepbox-1-right-bottom-label{
+    font-size: x-large;
+    padding: 10px 0px 0px 0px;
+    font-weight: bold;
+}

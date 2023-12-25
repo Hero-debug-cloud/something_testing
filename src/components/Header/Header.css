@@ -1,0 +1,58 @@
+/* Header.css */
+
+.header {
+    background-color: #9c3a3a;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 80%;
+    top: 0;
+    z-index: 1;
+    margin-left: 20%;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px;
+  }
+  
+  button:hover {
+    text-decoration: underline;
+  }
+  
+  .center-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 40px; /* Adjust the size of the logo as needed */
+    margin-right: 10px;
+  }
+  
+  .company-dropdown {
+    margin-right: 20px;
+  }
+  
+  .company-dropdown label {
+    margin-right: 5px;
+  }
+  
+  .company-name {
+    font-weight: bold;
+  }
+  .right-section {
+    display: flex;
+  }
