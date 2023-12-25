@@ -26,6 +26,7 @@
 }
 nav{
   width: 100%;
+  list-style: none;
 }
 nav ul {
   list-style: none;
@@ -60,6 +61,7 @@ nav ul {
   background-color: #E9Ebfd;
 }
 .settings{
+  margin-top: 12px;
   font-size: 12px;
   font-weight: bold;
 }

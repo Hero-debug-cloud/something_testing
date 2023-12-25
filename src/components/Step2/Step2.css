@@ -1,16 +1,13 @@
 .Step2-container{
     height:70vh;
-    /* background-color: aqua;; */
     overflow-y: scroll;
 }
-
 .Step2-box{
-    padding:20px;
+    /* padding:20px; */
     height: 100%;;
-    /* background-color: blue; */
 }
 .Step2-box-details{
-    height: 10vh;;
+    height: 10vh;
 }
 .Step2-box-details label{
     color: #7C8493;
@@ -18,14 +15,10 @@
 
 .Step2-box-descriptions,.Step2-box-Responsibilities,.Step2-box-who-you-are,.Step2-box-Nice-to-have{
     display: flex;
-    
-    /* background-color: #4640DE; */
     padding-top: 20px;
     height: 25vh;
     margin-bottom: 30px;
     border-top: 2px solid #D6DDEB;
-    
-
 }
 
 .Step2-box-descriptions-right input,.Step2-box-Responsibilities-right input {
