@@ -3,41 +3,11 @@
     overflow-y: scroll;
 }
 .applicants_table_sub_container{
-    padding: 2em;
+    padding: 1.5em 2em;
 }
 .applicants_heading p{
     font-weight: bold;
     padding: 6px;
     width: fit-content;
     border-bottom: 1.5px solid #4640DE;
-}
-.applicants_content{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 6px;
-}
-.applicants_content h4{
-    font-size: 18px;
-}
-.right_app_cont{
-    display: flex;
-    width: 34%;
-    justify-content: space-between;
-    align-items: center;
-}
-.search_container{
-    position: relative;
-}
-.search_icon{
-    position: absolute;
-    left: 10px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-.search_box{
-    padding: 14px;
-    border: 1px solid #ccc;
-    padding-left: 36px; 
-    width: 200px;
 }

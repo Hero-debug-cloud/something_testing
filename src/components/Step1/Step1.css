@@ -1,142 +1,78 @@
 /* styles.css */
 @import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap');
 
-/* Shared styles for font family */
-.body-large {
-  font-family: 'Epilogue', sans-serif;
-  font-size: 18px;
-  line-height: 29px;
-  letter-spacing: 0em;
-  text-align: left;
-}
-
-/* Font weights */
-.body-large-small {
-  font-weight: 300; /* Regular */
-}
-.body-large-regular {
-  font-weight: 400; /* Regular */
-}
-
-.body-large-medium {
-  font-weight: 500; /* Medium */
-}
-
-.body-large-semi-bold {
-  font-weight: 600; /* Semi-bold */
-}
-
-.body-large-bold {
-  font-weight: 700; /* Bold */
-}
 
 .BasicInformation-label{
     color: #7C8493;
 }
-
-
-
 .step1-container{
-    /* border:2px solid green; */
     overflow-y: scroll;
     height: 69vh;;
-
 }
 .step1-box{
     display: flex;
     flex-direction: column;
-    padding: 20px;
-   
+    gap: 20px;
 }
-
-
 .BasicInformation, .step1-box-jobTitle,.step1-box-type-of-employment,.step1-box-salary,.step1-box-Categories,.step1-box-Required-skills{
-    padding:20px;
     display: flex;
-    border-top:2px solid #D6DDEB;
-    
-    
+    padding-bottom: 12px;
+    border-bottom: 1.5px solid #D6DDEB;
 }
-
-.rupee-sign{
-   
-   position: absolute;
-    top:16px;
-    
-}
-
 .step1-box-jobTitle-right{
     margin-left :10%;
     display: flex;
     flex-direction: column;
 }
-
-
-.step1-box-jobTitle-right-label {
-    font-size:smaller;
-    margin-bottom: 10px;
+.step1-box-jobTitle-right input{
+    border: 1px solid #D6DDEB;
+    padding: 6px;
+    width: 20vw;
 }
-
+.step1-box-jobTitle-right-label {
+    margin-bottom: 10px;
+    color: #7C8493;
+}
 .step1-box-type-of-employment-right{
     display: flex;
     flex-direction: column;   
     margin-left: 8%;
 }
-
 .step1-box-Categories-right{
-    margin-left: 160px;;
+    margin-left: 120px;
 }
-
 .step1-box-jobTitle-left label,.step1-box-type-of-employment-left label,.step1-box-salary-left label,.step1-box-Categories-left label,.step1-box-Required-skills-left label{
     color:     #7C8493;
-    
-    
-    
-
-
 }
-
-
-.step1-box-jobTitle-left ,.step1-box-type-of-employment-left ,.step1-box-salary-left ,.step1-box-Categories-left ,.step1-box-Required-skills-left {
-
-}
-
-
-
-.step1-box-jobTitle-right input{
-    width: 20vw;
-    height: 30px;
-    font-size: medium;
-    margin-bottom: 10px;
-    padding:7px;
-}
-
-
-
-
 .step1-box-type-of-employment-right input  {
-  
    margin-bottom: 20px;
-   
 }
 .step1-box-type-of-employment-right label{
     margin-left: 10px;
-    font-size: large;
 }
-
 .step1-box-type-of-employment-right input[type=checkbox]{
     border-color: #4640DE;
     background-color: #4640DE;
 }
+.step1-box-salary{
+    display:flex;
+    align-items:center;
+}
+.step1-box-salary-left {
+    width:18vw;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
 .step1-box-salary-right{
-    /* background-color: #4640DE; */
     margin-left: 130px;
     width: 37%;
-
 }
-
-
 .step1-box-salary-right-input{
+    display: flex;
+    align-items: center;
+}
+.rupee-container{
     /* margin-left: 140px; */
     position: relative;
     display: flex;
@@ -145,64 +81,46 @@
     text-align: center;
     /* background-color: #4640DE; */
 }
-
-
-.step1-box-salary-right-input input{
+.rupee-sign{
+    position: absolute;
+    top:8px;
+    left: 32px;
+}
+.rupee-container input{
     margin-left: 25px;
     margin-right: 20px;
-    padding:7px;
+    padding: 6px 6px 6px 25px;
+    border: 1px solid #D6DDEB;
     outline: none;
-    
-    
+    font-size: 12px;
 }
-
-
-
-.step1-box-salary{
-    display:flex;
-    align-items:center;
-}
-
 .step1-box-Categories-right-drop-down {
-    width: 200px;
+    width: 250px;
+    margin-top: 4px;
     color: #515B6F ;
     padding: 7px;
     width: 15vw;
+    border: 1px solid #D6DDEB;
 }
-
-.step1-box-Required-skills-right{
-    margin-left: 240px;;
-}
-
-.step1-box-Required-skills-right input{
-    padding:7px;
-    outline: none;
-}
-
 .step1-box-Required-skills{
     display: flex;
     align-items: center;
 }
-
-.step1-box-submit{
-    border-top: 2px solid #D6DDEB;;
-    
+.step1-box-Required-skills-right{
+    margin-left: 180px;
 }
-
-
+.step1-box-Required-skills-right input{
+    padding: 7px;
+    border: 1px solid #D6DDEB;
+    outline: none;
+}
 .step1-box-submit-button{
-   
-   margin-top: 20px;
     background-color:#4640DE ;
     padding:10px 20px 10px 20px;
     font-size: large;
     float:right;
     color:white;
     border:none;
+    cursor: pointer;
 }
 
-.step1-box-salary-left {
-    /* color: #4640DE; */
-    width:18vw;
-    /* background-color: aqua; */
-}

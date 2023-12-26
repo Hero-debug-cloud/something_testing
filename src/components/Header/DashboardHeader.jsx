@@ -11,22 +11,21 @@ const DashboardHeader = () => {
               <img src={logo} alt="img" />
             </div>
             <div className="PostJobHeader-1-companyName">
-              <label className="PostJobHeader-1-companyName-label">
+              <div className="PostJobHeader-1-companyName-label">
                 Company
-              </label>
-
-              <label className="postJobHeader-1-companyName-dropDown">
-                Nomad
+              </div>
+              <div className="postJobHeader-1-companyName-dropDown">
+                <h4>Nomad</h4>
                 <FaChevronDown className="postJobHeader-1-companyName-dropDown-pointer" />
-              </label>
+              </div>
             </div>
           </div>
 
           <div className="PostJobHeader-1-right">
-            <LuBell size={30} />
+            <LuBell size={24} />
             <div className="PostJobHeader-1-button">
-              <FiPlus size={30} />
-              <label className="PostJobHeader-1-right-label">Post a job</label>
+              <FiPlus size={24} />
+              <p className="PostJobHeader-1-right-label">Post a job</p>
             </div>
           </div>
         </div>

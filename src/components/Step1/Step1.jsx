@@ -11,7 +11,7 @@ const Step1 = ({ handleChange , dataTransfer }) => {
   });
 
   const type_of_employment_data = [
-    "full-time",
+    "Full-time",
     "Part-time",
     "Remote",
     "Internship",
@@ -82,40 +82,40 @@ const Step1 = ({ handleChange , dataTransfer }) => {
       <div className="step1-box">
         <div className="BasicInformation">
           <div className="step1-box-BasicInformation-left  ">
-            <h3 className="body-large body-large-semi-bold">
+            <h3 className="text-base font-semibold">
               Basic Information
             </h3>
-            <label className="BasicInformation-label body-large body-large-regular ">
+            <label className="BasicInformation-label text-sm">
               This information will be displayed publicly
             </label>
           </div>
         </div>
         <div className="step1-box-jobTitle">
           <div className="step1-box-jobTitle-left">
-            <h3 className="body-large body-large-semi-bold">Job title</h3>
-            <label className="body-large body-large-regular">
+            <h3 className="text-base font-semibold">Job Title</h3>
+            <label className="text-sm">
               Job titles must be describe one position
             </label>
           </div>
-          <div className="step1-box-jobTitle-right">
+          <div className="step1-box-jobTitle-right">  
             <input
-              className="body-large body-large-regular"
+              className="text-base font-normal"
               type="text"
-              placeholder="e.g software Engineer"
+              placeholder="e.g Software Engineer"
               value={Step1_data.jobTitle}
               onChange={handleJobTitleChange}
             />
-            <label className="step1-box-jobTitle-right-label body-large body-large-regular">
+            <label className="step1-box-jobTitle-right-label text-sm">
               At least 80 characters
             </label>
           </div>
         </div>
         <div className="step1-box-type-of-employment">
           <div className="step1-box-type-of-employment-left ">
-            <h3 className="body-large body-large-semi-bold">
+            <h3 className="text-base font-semibold">
               Type of employment
             </h3>
-            <label className="body-large body-large-regular">
+            <label className="text-sm">
               You can select multiple type of employment
             </label>
           </div>
@@ -129,7 +129,7 @@ const Step1 = ({ handleChange , dataTransfer }) => {
               checked={Step1_data.type_of_employment.includes(value)}
               onChange={handleTypeOfEmploymentChange}
             />
-                  <label className="body-large body-large-regular">
+                  <label className="text-sm">
                     {" "}
                     {value}{" "}
                   </label>
@@ -141,9 +141,9 @@ const Step1 = ({ handleChange , dataTransfer }) => {
 
         <div className="step1-box-salary">
           <div className="step1-box-salary-left">
-            <h3 className="body-large body-large-semi-bold">Salary </h3>
-            <label className="body-large body-large-regular">
-              Please spicify the estimade salary range for the role "You can
+            <h3 className="text-base font-semibold">Salary </h3>
+            <label className="text-sm font-normal">
+              Please specify the estimate salary range for the role. *You can
               leave this blank
             </label>
           </div>
@@ -151,17 +151,15 @@ const Step1 = ({ handleChange , dataTransfer }) => {
             <div className="step1-box-salary-right-input">
               <div className="rupee-container">
                 <MdOutlineCurrencyRupee className="rupee-sign" />
-
                 <input
                   type="number"
                   value={Step1_data.salary.start}
                   onChange={(e) => handleSalaryChange("start", e)}
                 />
               </div>
-              <label>to</label>
+              <label className="text-sm">to</label>
               <div className="rupee-container">
                 <MdOutlineCurrencyRupee className="rupee-sign" />
-
                 <input
                   type="number"
                   value={Step1_data.salary.end}
@@ -173,18 +171,18 @@ const Step1 = ({ handleChange , dataTransfer }) => {
         </div>
         <div className="step1-box-Categories">
           <div className="step1-box-Categories-left">
-            <h3 className="body-large body-large-semi-bold"> Categories</h3>
-            <label className="body-large body-large-regular">
+            <h3 className="text-base font-semibold"> Categories</h3>
+            <label className="text-sm font-normal">
               You can select multiple job categories
             </label>
           </div>
           <div className="step1-box-Categories-right">
-            <h3 className="body-large body-large-regular">
+            <h3 className="text-base font-semibold">
               Select Job Categories
             </h3>
             <select
               onChange={handleCategoriesChange}
-              className="step1-box-Categories-right-drop-down  "
+              className="step1-box-Categories-right-drop-down"
               name=""
               id=""
             >
@@ -198,14 +196,15 @@ const Step1 = ({ handleChange , dataTransfer }) => {
         </div>
         <div className="step1-box-Required-skills">
           <div className="step1-box-Required-skills-left">
-            <h3 className="body-large body-large-semi-bold">Required Skills</h3>
-            <label className="body-large body-large-regular">
+            <h3 className="text-base font-semibold">Required Skills</h3>
+            <label className="text-sm">
               Add required skills for the job
             </label>
           </div>
           <div className="step1-box-Required-skills-right">
             <input
               type="text"
+              placeholder="Add skills"
               value={Step1_data.required_skills}
               onChange={handleRequiredSkillsChange}
             />

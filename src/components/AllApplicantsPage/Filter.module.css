@@ -3,7 +3,7 @@
 }
 .filter_container button{
     display: flex;
-    padding: 12px;
+    padding: 6px 12px;
     justify-content: space-between;
     /* width: 4em; */
     align-items: center;

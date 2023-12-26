@@ -65,18 +65,18 @@ useEffect(()=>{
   const data = [
     {
       icon: (
-        <PiHandbagFill size={30} color={selected >= 0 ? "white" : "#7C8493"} />
+        <PiHandbagFill size={20} color={selected >= 0 ? "white" : "#7C8493"} />
       ),
       name: "Job Information",
     },
     {
       icon: (
-        <FaClipboard size={30} color={selected >= 1 ? "white" : "#7C8493"} />
+        <FaClipboard size={20} color={selected >= 1 ? "white" : "#7C8493"} />
       ),
       name: "Job Description",
     },
     {
-      icon: <FaGift size={30} color={selected >= 2 ? "white" : "#7C8493"} />,
+      icon: <FaGift size={20} color={selected >= 2 ? "white" : "#7C8493"} />,
       name: "Perks and benefit",
     },
   ];
@@ -91,12 +91,12 @@ useEffect(()=>{
 
   return (
     <>
-      <div className="PostJobHeader ">
+      <div className="PostJobHeader">
         <DashboardHeader />
         <BothModal open={logincheck} text="Continue To Your Recruiter Account " done={()=>{}}/>
         <div className="PostJobHeader-2">
           <div className="PostJobHeader-2-upper">
-            <FaArrowLeftLong onClick={handleBack} size={30} />
+            {/* <FaArrowLeftLong onClick={handleBack} size={30} /> */}
             <label className="PostJobHeader-2-upper-label">Post a Job</label>
           </div>
           <div className="PostJobHeader-2-bottom">

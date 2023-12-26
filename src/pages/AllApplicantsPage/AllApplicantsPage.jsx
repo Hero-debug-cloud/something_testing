@@ -13,10 +13,10 @@ const AllApplicantsPage = () => {
         <div className={styles.top_container}>
           <div className={styles.heading_container}>
             <h2>Job Listing</h2>
-            <p>Here is your jobs listing status from July 19 - July 25.</p>
+            <p>Here is your jobs listing status from .</p>
           </div>
           <div className={styles.date_container}>
-            <p>Jul 19 - Jul 25</p>
+            <p></p>
             <FaCalendarDay color="#4640DE"/>
           </div>
         </div>
@@ -28,9 +28,9 @@ const AllApplicantsPage = () => {
           <div className={styles.table_container}>
             <JobRow/>
           </div>
-          <div className={styles.foot_table}>
+          {/* <div className={styles.foot_table}>
             <TableFooter/>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
